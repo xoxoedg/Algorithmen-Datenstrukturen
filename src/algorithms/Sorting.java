@@ -20,16 +20,15 @@ public class Sorting {
                 arr[j] = arr[j - 1];
                 j--;
             }
-
             arr[j] = key;
         }
     }
 
     private static void selectionSort(int[] a) {
         int n = a.length;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n-1; i++) {
             int min = 0;
-            for (int j = i + 1; j < n - 1; j++) {
+            for (int j = i + 1; j < n; j++) {
                 if (a[j] < a[min]) {
                     min = j;
                 }
@@ -40,9 +39,7 @@ public class Sorting {
                 a[min] = temp;
             }
         }
-
     }
-
 
     private static void bubbleSort(int[] arr) {
         int n = arr.length;
