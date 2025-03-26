@@ -29,6 +29,8 @@ public class Basics {
         return x;
     }
 
+    x
+
     // Schätzung der Zahl Pi
     //Allgemeinheit -> Ja
     //Determiniertheit -> Nicht gegeben
